@@ -216,3 +216,22 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Node / TypeScript
+node_modules/
+.pnpm-store/
+.turbo/
+
+# Local runtime state
+.aspire/
+.n8n/
+data/
+
+# Secrets
+.env.*
+!.env.example
+
+# Editors and OS files
+.DS_Store
+Thumbs.db
+.idea/

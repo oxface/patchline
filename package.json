@@ -1,0 +1,26 @@
+{
+  "name": "patchline",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Local-first internal automation learning project built around n8n, MAF, and modern AI system patterns.",
+  "scripts": {
+    "dev": "pnpm --filter @patchline/aspire dev",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "lint": "pnpm -r --if-present lint",
+    "typecheck": "pnpm -r --if-present typecheck",
+    "prepare": "husky"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.0.0",
+    "@commitlint/cli": "^19.0.0",
+    "@commitlint/config-conventional": "^19.0.0",
+    "eslint": "^9.0.0",
+    "husky": "^9.0.0",
+    "lint-staged": "^15.0.0",
+    "prettier": "^3.0.0",
+    "release-please": "^16.0.0",
+    "typescript": "^5.0.0"
+  },
+  "packageManager": "pnpm@9.15.0"
+}

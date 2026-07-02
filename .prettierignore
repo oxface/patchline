@@ -1,0 +1,10 @@
+node_modules/
+.venv/
+dist/
+build/
+coverage/
+pnpm-lock.yaml
+work/
+outputs/
+data/
+

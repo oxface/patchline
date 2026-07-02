@@ -1,0 +1,12 @@
+{
+  "name": "@patchline/aspire",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "echo \"Aspire TS AppHost is not scaffolded yet. See infra/aspire/README.md.\"",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {}
+}
