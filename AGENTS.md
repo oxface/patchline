@@ -26,10 +26,11 @@ Use repo-local skills when maintaining durable docs:
 
 ## Current Technical Direction
 
-- pnpm for the TypeScript monorepo.
+- pnpm for the TypeScript app workspace.
+- npm for `apphost/`, because Aspire runs the TypeScript AppHost as an isolated package.
 - uv for Python projects.
 - Podman as the local container runtime.
-- root-level Aspire TypeScript AppHost for local orchestration.
+- nested `apphost/` Aspire TypeScript AppHost for local orchestration.
 - n8n plus Postgres for the first runtime.
 - Microsoft Agent Framework later, once a workflow earns a code-native agent layer.
 - k3s and Argo CD after the local workflow shape is understood.

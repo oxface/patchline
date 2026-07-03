@@ -7,4 +7,4 @@ Read first:
 
 Keep local development fast. Do not make k3s or GitOps mandatory before Milestone 2.
 
-The Aspire AppHost is intentionally root-level. Do not recreate `infra/aspire` unless a new ADR changes that decision.
+The Aspire AppHost intentionally lives in `../apphost/`. Do not recreate `infra/aspire` unless a new ADR changes that decision.

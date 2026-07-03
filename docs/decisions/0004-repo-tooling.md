@@ -13,7 +13,8 @@ The repo needs early formatting, commit discipline, and release automation witho
 
 Use:
 
-- pnpm workspaces for TypeScript packages,
+- pnpm workspaces for TypeScript application packages,
+- npm for the nested Aspire TypeScript AppHost package,
 - uv for Python projects,
 - Prettier for shared formatting,
 - ESLint for TypeScript/JavaScript linting,
@@ -22,9 +23,9 @@ Use:
 - Release Please for changelog and release PRs,
 - Pyright and Ruff for Python once `apps/server` becomes active.
 
-Release Please uses the `node` strategy at the repository root so the root `package.json` version is bumped. It also updates `apps/server/pyproject.toml` through `extra-files` while Patchline still uses one repo-level release.
+Release Please uses the `node` strategy at the repository root so the root `package.json` version is bumped. It also updates `apphost/package.json` and `apps/server/pyproject.toml` through `extra-files` while Patchline still uses one repo-level release.
 
-The Aspire TypeScript AppHost is root-level and uses root `package.json` scripts.
+The Aspire TypeScript AppHost lives in `apphost/`. Root `package.json` keeps lightweight delegate scripts, but the AppHost package uses npm because Aspire runs TypeScript AppHost dependency installation from that package directory.
 
 Keep app folders lightweight placeholders until workflow friction earns implementation.
 

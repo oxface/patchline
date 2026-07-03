@@ -6,6 +6,11 @@
       "changelog-path": "CHANGELOG.md",
       "extra-files": [
         {
+          "type": "json",
+          "path": "apphost/package.json",
+          "jsonpath": "$.version"
+        },
+        {
           "type": "toml",
           "path": "apps/server/pyproject.toml",
           "jsonpath": "$.project.version"

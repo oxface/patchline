@@ -1,9 +1,12 @@
 # 0005: Root Aspire AppHost
 
 Date: 2026-07-03
-Status: accepted
+Status: superseded
 
 ## Context
+
+This decision is historical. It was superseded by
+[0006-nested-typescript-apphost.md](0006-nested-typescript-apphost.md).
 
 Aspire TypeScript initialization treats the AppHost as the composition root for the workspace. When initialized in a non-empty repository, the CLI may generate a nested AppHost folder such as `aspire-app`.
 
@@ -23,6 +26,8 @@ Use `infra/` for deployment infrastructure such as k3s and Argo CD, not for the 
 
 ## Consequences
 
+These consequences describe the superseded root-level shape and are no longer current.
+
 - `pnpm dev` runs the root AppHost.
 - Aspire-generated sample app folders are not kept.
 - `.aspire/modules/` is source-controlled because `apphost.mts` imports it.
@@ -32,4 +37,4 @@ Use `infra/` for deployment infrastructure such as k3s and Argo CD, not for the 
 
 - [../roadmap.md](../roadmap.md)
 - [0004-repo-tooling.md](0004-repo-tooling.md)
-
+- Superseded by [0006-nested-typescript-apphost.md](0006-nested-typescript-apphost.md)

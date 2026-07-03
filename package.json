@@ -2,13 +2,12 @@
   "name": "patchline",
   "version": "0.1.0",
   "private": true,
-  "type": "module",
   "description": "Local-first internal automation learning project built around n8n, MAF, and modern AI system patterns.",
   "scripts": {
-    "aspire:lint": "eslint apphost.mts",
+    "aspire:lint": "npm --prefix apphost run aspire:lint",
     "aspire:start": "aspire run",
-    "aspire:build": "tsc -p tsconfig.apphost.json",
-    "aspire:dev": "tsc --watch -p tsconfig.apphost.json",
+    "aspire:build": "npm --prefix apphost run aspire:build",
+    "aspire:dev": "npm --prefix apphost run aspire:dev",
     "dev": "pnpm run aspire:start",
     "build": "pnpm run aspire:build",
     "watch": "pnpm run aspire:dev",
@@ -18,26 +17,16 @@
     "typecheck": "pnpm run aspire:build && pnpm -r --if-present typecheck",
     "prepare": "husky"
   },
-  "dependencies": {
-    "vscode-jsonrpc": "^8.2.0"
-  },
-  "engines": {
-    "node": "^20.19.0 || ^22.13.0 || >=24"
-  },
   "devDependencies": {
-    "@commitlint/cli": "^19.0.0",
-    "@commitlint/config-conventional": "^19.0.0",
-    "@eslint/js": "^9.0.0",
-    "@types/node": "^22.0.0",
-    "eslint": "^10.0.3",
-    "husky": "^9.0.0",
-    "lint-staged": "^15.0.0",
-    "nodemon": "^3.1.14",
-    "prettier": "^3.0.0",
-    "release-please": "^16.0.0",
-    "tsx": "^4.21.0",
-    "typescript": "^5.9.3",
-    "typescript-eslint": "^8.57.1"
+    "@commitlint/cli": "^21.2.0",
+    "@commitlint/config-conventional": "^21.2.0",
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.6.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^17.0.8",
+    "prettier": "^3.9.4",
+    "release-please": "^17.10.1",
+    "typescript": "^6.0.3"
   },
-  "packageManager": "pnpm@9.15.0"
+  "packageManager": "pnpm@11.9.0"
 }

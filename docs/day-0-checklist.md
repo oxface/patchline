@@ -4,6 +4,7 @@
 
 - Install Git and confirm `git --version`.
 - Install pnpm and confirm `pnpm --version`.
+- Confirm npm is available through the active Node.js installation.
 - Install uv and confirm `uv --version`.
 - Install Podman Desktop.
 - Confirm Podman exposes a Docker-compatible socket usable by Aspire.
@@ -12,6 +13,7 @@
 ## Repository Setup
 
 - Run `pnpm install`.
+- Run `npm --prefix apphost install`.
 - Run `pnpm prepare` to initialize Husky.
 - Confirm `pnpm format:check` works.
 - Confirm Conventional Commit validation works.
@@ -19,7 +21,7 @@
 
 ## Runtime Setup
 
-- Start n8n locally through the root Aspire AppHost or directly.
+- Start n8n locally through the Aspire AppHost or directly.
 - Start Postgres locally.
 - Confirm n8n can connect to Postgres.
 - Confirm n8n can call Ollama.
