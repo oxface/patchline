@@ -8,7 +8,7 @@ Goal: run the local automation base before writing custom application code.
 - Install root pnpm workspace dependencies.
 - Initialize Husky commit hooks.
 - Validate Podman exposes a Docker-compatible socket usable by Aspire.
-- Create Aspire TypeScript AppHost.
+- Use the root-level Aspire TypeScript AppHost.
 - Run n8n with Postgres.
 - Confirm n8n can reach Ollama on the Windows host.
 - Confirm n8n workflow exports can be source controlled.

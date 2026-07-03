@@ -30,7 +30,9 @@ Start with:
 ## Repository Shape
 
 - `apps/`: future Patchline application code.
-- `infra/`: local and deployment infrastructure.
+- `apphost.mts`: Aspire local composition root.
+- `.aspire/modules/`: generated Aspire TypeScript modules used by the AppHost.
+- `infra/`: deployment infrastructure such as k8s and Argo CD.
 - `workflows/`: source-controlled workflow exports.
 - `evals/`: evaluation artifacts.
 - `docs/`: durable project documentation.

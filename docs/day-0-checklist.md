@@ -15,10 +15,11 @@
 - Run `pnpm prepare` to initialize Husky.
 - Confirm `pnpm format:check` works.
 - Confirm Conventional Commit validation works.
+- Confirm `pnpm run aspire:build` works.
 
 ## Runtime Setup
 
-- Start n8n locally through Aspire or directly.
+- Start n8n locally through the root Aspire AppHost or directly.
 - Start Postgres locally.
 - Confirm n8n can connect to Postgres.
 - Confirm n8n can call Ollama.

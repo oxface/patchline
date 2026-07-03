@@ -223,7 +223,7 @@ node_modules/
 .turbo/
 
 # Local runtime state
-.aspire/
+.aspire/integrations/
 .n8n/
 data/
 

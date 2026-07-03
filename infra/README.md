@@ -1,9 +1,10 @@
 # Infrastructure
 
-Local and deployment infrastructure lives here.
+Deployment infrastructure lives here.
 
 Current sequence:
 
-1. Aspire TypeScript AppHost for local runtime.
-2. k3s manifests after the local workflow shape is understood.
-3. Argo CD definitions after k3s manifests exist.
+1. k3s manifests after the local workflow shape is understood.
+2. Argo CD definitions after k3s manifests exist.
+
+The Aspire TypeScript AppHost lives at the repository root as `apphost.mts`.

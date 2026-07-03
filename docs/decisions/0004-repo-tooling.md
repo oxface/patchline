@@ -24,6 +24,8 @@ Use:
 
 Release Please uses the `node` strategy at the repository root so the root `package.json` version is bumped. It also updates `apps/server/pyproject.toml` through `extra-files` while Patchline still uses one repo-level release.
 
+The Aspire TypeScript AppHost is root-level and uses root `package.json` scripts.
+
 Keep app folders lightweight placeholders until workflow friction earns implementation.
 
 ## Consequences
